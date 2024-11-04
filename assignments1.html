@@ -1,11 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
+    <style>
+        button {
+            background-color: green;
+        }
+    </style>
 </head>
-<body>
+
+<body class="px-10 space-y-4">
+    <h1 class="text-4xl font-bold text-center">
+        08134874988
+        Advanced Event Handling & Form Validation
+    </h1>
+    <div class="hover:bg-stone-200 p-2 border-b-2 border-black">
+        <h1 class="text-xl font-black">question 1</h1>
+        <ul class="text-sm">
+            <li>1. Create a link in your HTML.</li>
+            <li>2. Add an event listener for the 'click' event on the link.</li>
+            <li> 3. Use event.preventDefault( ) to prevent the default navigation.</li>
+            <li>4. Log a message to the console indicating the link was clicked.</li>
+        </ul>
+
+        <h1 class="text-xl font-bold border-t-2 mt-3">
+            Solution
+        </h1>
+        <a class="text-blue-800 underline" href="https://www.example.com" id="my-link">Prevent default</a>
+    </div>
+    <div class="hover:bg-stone-200 p-2 border-b-2 mb-3 border-black">
+        <h1 class="text-xl font-black">question 2</h1>
+        <ul class="text-sm">
+            <li>1. Create a <div> element in your HTML.</li>
+            <li> 2. Add multiple dynamically created buttons inside the div>.</li>
+            <li> 3. Use event delegation to manage click events on these buttons.</li>
+            <li>4. Log a message identifying which button was clicked.</li>
+        </ul>
+
+        <h1 class="text-xl font-bold border-t-2 mt-3">
+            Solution
+        </h1>
+        <div id="buttonContainer" class="space-x-2">
+
+        </div>
+    </div>
+    <div class="hover:bg-stone-200 p-2 border-b-2 mb-3 border-black">
+        <h1 class="text-xl font-black">question 3</h1>
+        <ul class="text-sm">
+            <li>1. Create a ul> element in your HTML. </li>
+            <li> 2. Add a button that, when clicked, adds new li> elements to the ul>.</li>
+            <li> 3. Use event delegation to handle clicks on all li> elements, including the newly added ones.</li>
+            <li></li>
+        </ul>
+
+        <h1 class="text-xl font-bold border-t-2 mt-3">
+            Solution
+        </h1>
+        <div>
+            <button id="addBtn">add LI</button>
+            <ul id="listItems"> </ul>
+        </div>
+    </div>
+    <div class=" hover:bg-stone-200 p-2 border-b-2 mb-3 border-black">
+        <h1 class="text-xl font-black">question 4</h1>
+        <ul>
+            <li>1. Create a form with an input field.</li>
+            <li> 2. Add an event listener for the 'focus' event on the input.
+            </li>
+            <li> 3. Log a message when the input field gains focus.</li>
+            <li></li>
+        </ul>
+
+        <h1 class="text-xl font-bold border-t-2 mt-3">
+            Solution
+        </h1>
+        <div>
+            <form id="focus-input" action="">
+                <input type="text" name="" id="">
+            </form>
+        </div>
+    </div>
+    <div class="hover:bg-stone-200 p-2 border-b-2 mb-3 border-black">
+        <h1 class="text-xl font-black">question 5</h1>
+        <ul class="text-sm">
+            <li>1. Create an HTML structure with a parent and child element. </li>
+            <li>2. Add an event listener to the ch1ild element.</li>
+            <li> 3. In the listener, use stopPropagation( ) to prevent the event from reaching the parent.</li>
+            <li> 4. Log a message indicating that bubbling was stopped.</li>
+        </ul>
+
+        <h1 class="text-xl font-bold border-t-2 mt-3">
+            Solution
+        </h1>
+        <div>
+            <div id="parent">
+                parent Div
+                <div id="child"> child Div </div>
+            </div>
+        </div>
+    </div>
+    <div class="hover:bg-stone-200 p-2 border-b-2 mb-3 border-black">
+        <h1 class="text-xl font-black">question 6</h1>
+        <ul class="text-sm">
+            <li>. Create a new HTML file.</li>
+            <li>2. Add nested elements (e.g., div> and p>).</li>
+            <li> 3. Write JavaScript code to add event listeners to both elements.</li>
+            <li>4. Log the event order to the console when an event is triggered. </li>
+        </ul>
+
+        <h1 class="text-xl font-bold border-t-2 mt-3">
+            Solution
+        </h1>
+        <div>
+            <div id="outerDiv">
+                parent Div
+                <div id="innerChild"> child Div </div>
+            </div>
+        </div>
+    </div>
+    <div class="hover:bg-stone-200 p-2 border-b-2 mb-3 border-black">
+        <h1 class="text-xl font-black">question 7</h1>
+        <ul class="text-sm">
+            <li>1. Create a dropdown menu in your HTML form.</li>
+            <li> 2. Add an event listener for the 'change' event.</li>
+            <li> 3. Log the selected value to the console when the dropdown value changes.</li>
+            <li></li>
+        </ul>
+
+        <h1 class="text-xl font-bold border-t-2 mt-3">
+            Solution
+        </h1>
+        <div>
+            <select name="" id="myDropdown">
+                <option value="">Select an option</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+        </div>
+    </div>
+    <div class="hover:bg-stone-200 p-2 border-b-2 mb-3 border-black">
+        <h1 class="text-xl font-black">question 8</h1>
+        <ul class="text-sm">
+            <li>1. Create a text input field and a button. </li>
+            <li> 2. Add an event listener to the button.</li>
+            <li>3. Write JavaScript to toggle the disabled state of the text input when the button is clicked.</li>
+            <li></li>
+        </ul>
+
+        <h1 class="text-xl font-bold border-t-2 mt-3">
+            Solution
+        </h1>
+        <div>
+            <input type="text" name="" id="input" placeholder="toggle me">
+            <button class="hover:cursor-pointer" id="toggle">click me</button>
+        </div>
+    </div>
+    <div class="hover:bg-stone-200 p-2 border-b-2 mb-3 border-black">
+        <h1 class="text-xl font-black">question 9</h1>
+        <ul>
+            <li>1. Create an HTML form with various input fields.</li>
+            <li> 2. Write JavaScript to check for empty fields on form submission.</li>
+            <li> 3. Display a message if any fields are empty.</li>
+            <li></li>
+        </ul>
+
+        <h1 class="text-xl font-bold border-t-2 mt-3">
+            Solution
+        </h1>
+        <div>
+            <form id="toggleInput" action="">
+                <input class="input1" type="text" name="" id="">
+                <input class="input1" type="text" name="" id="">
+                <button> validate </button>
+            </form>
+        </div>
+    </div>
+    <div class="hover:bg-stone-200 p-2 border-b-2 mb-3 border-black">
+        <h1 class="text-xl font-black">question 10</h1>
+        <ul class="text-sm">
+            <li> 1. Create a form with an email input field. </li>
+            <li> 2. Add an event listener for the 'submit' event.</li>
+            <li> 3. Use setCustomValidity( ) to display a custom error message for invalid email formats. </li>
+            <li></li>
+        </ul>
+
+        <h1 class="text-xl font-bold border-t-2 mt-3">
+            Solution
+        </h1>
+        <div>
+            <form id="emailForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required> 
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
     <script src="assignment1.js"></script>
 </body>
+
 </html>
