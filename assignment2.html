@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Assignment 2</title>
+</head>
+
+<body class="bg-stone-100 p-2">
+    <h1 class="text-4xl font-bold text-center">
+        Working with the DOM
+    </h1>
+    <div class="hover:bg-stone-200 p-2 border-b-2 border-black">
+        <h1 class="text-xl font-black">question 1</h1>
+        <ul class="text-sm">
+            <li> 1. Use JavaScript to select the img> element using getElementById( ).</li>
+            <li>2. Add a title attribute with the value "Bootcamp Image".</li>
+            <li>3. Print the img> element using console.log( ).</li>
+        </ul>
+
+        <h1 class="text-xl font-bold border-t-2 mt-3">
+            Solution
+        </h1>
+        <div>
+            <div class="w-32 h-32">
+                <img id="dynamic-box"  src="/img/fitech-logo.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="hover:bg-stone-200 p-2 border-b-2 border-black">
+        <h1 class="text-xl font-black">question 2</h1>
+        <ul class="text-sm">
+            <li> 1. Use querySelector() to select the input field with the class user-input.</li>
+            <li>2. Add a keydown event listener that prints "Key pressed" whenever a key is pressed.</li>
+            <li>3. Also print the current value of the input field using console.log() inside the event handler.</li>
+        </ul>
+
+        <h1 class="text-xl font-bold border-t-2 mt-3">
+            Solution
+        </h1>
+        <div>
+            <input type="text" class="user-input" placeholder="type something...">
+        </div>
+    </div>
+    <div class="hover:bg-stone-200 p-2 border-b-2 border-black">
+        <h1 class="text-xl font-black">question 3</h1>
+        <ul class="text-sm">
+            <li> 1. Use querySelectorAll() to select all elements with the class item. </li>
+            <li> 2. Change the second item’s text to "Updated Item 2".</li>
+            <li> 3. Print the NodeList of items using console.log( ).</li>
+            <li></li>
+        </ul>
+
+        <h1 class="text-xl font-bold border-t-2 mt-3">
+            Solution
+        </h1>
+        <div>
+            <ul>
+                <li class="item">item 1</li>
+                <li class="item">item 2</li>
+            </ul>
+        </div>
+    </div>
+    <div class="hover:bg-stone-200 p-2 border-b-2 border-black">
+        <h1 class="text-xl font-black">question 4</h1>
+        <ul class="text-sm">
+            <li> 1. Use JavaScript to select the button using getElementById( ).</li>
+            <li>2. Add a click event listener that changes the button text to "Button Clicked!" when clicked.</li>
+            <li> 3. Print "Button was clicked" inside the event handler using console.log( ).</li>
+            <li></li>
+        </ul>
+
+        <h1 class="text-xl font-bold border-t-2 mt-3">
+            Solution
+        </h1>
+        <div>
+           <a href="https://github.com" id="github-link"> Visit GitHub</a>
+        </div>
+      
+    </div>
+    <div class="hover:bg-stone-200 p-2 border-b-2 border-black">
+        <h1 class="text-xl font-black">question 5</h1>
+        <ul class="text-sm">
+            <li>1. Use JavaScript to select all elements with the class box using getElementsByClassName().</li>
+            <li> 2. Change the background color of the second box to "yellow".</li>
+            <li> 3. Print the collection of elements using console.log( ).</li>
+            <li></li>
+        </ul>
+
+        <h1 class="text-xl font-bold border-t-2 mt-3">
+            Solution
+        </h1>
+        <div>
+            <div class="box"> Box 1</div>
+            <div class="box"> Box 2</div>
+        </div>
+    </div>
+    <div class="hover:bg-stone-200 p-2 border-b-2 border-black">
+        <h1 class="text-xl font-black">question 6</h1>
+        <ul class="text-sm">
+            <li>1. Use JavaScript to select the h2> element using querySelector() with the class .header.</li>
+            <li>2. Change its content to "Welcome to FiTech!".</li>
+            <li>3. Print the selected element using console.log( ).</li>
+            <li></li>
+        </ul>
+
+        <h1 class="text-xl font-bold border-t-2 mt-3">
+            Solution
+        </h1>
+        <h2 class="header text-2xl font-black text-green-500">Bootcamp Header</h2>
+    </div>
+    <div class="hover:bg-stone-200 p-2 border-b-2 border-black">
+        <h1 class="text-xl font-black">question 7</h1>
+        <ul class="text-sm">
+            <li> 1. Use JavaScript to select all p> elements using getElementsByTagName( ). </li>
+            <li>2.Change the content of the first paragraph to "This is the updated paragraph 1".</li>
+            <li>3. Print the p> elements collection using console.log( ).</li>
+            <li></li>
+        </ul>
+
+        <h1 class="text-xl font-bold border-t-2 mt-3">
+            Solution
+        </h1>
+        <div id="paragraph">
+            <p> This is paragraph 1</p>
+            <p> This is paragraph 2</p>
+        </div>
+    </div>
+    <div class="hover:bg-stone-200 p-2 border-b-2 border-black">
+        <h1 class="text-xl font-black">question 8</h1>
+        <ul class="text-sm">
+            <li>1. Use JavaScript to select the a> element using getElementById( ). </li>
+            <li> 2. Retrieve the value of the href attribute using getAttribute( ).</li>
+            <li>3. Print the value of the href attribute using console.log( ).</li>
+            <li></li>
+        </ul>
+
+        <h1 class="text-xl font-bold border-t-2 mt-3">
+            Solution
+        </h1>
+
+        <div>
+           <a href="https://github.com" id="gitHub-link"> Visit GitHub</a>
+        </div>
+    </div>
+    <div class="hover:bg-stone-200 p-2 border-b-2 border-black">
+        <h1 class="text-xl font-black">question 9</h1>
+        <ul class="text-sm">
+            <li>1. Use JavaScript to select the h1> element using getElementById( ) </li>
+            <li> 2. Change the content to "DOM Manipulation is Amazing!". </li>
+            <li> 3. Print the modified element using console.log( ).</li>
+            <li></li>
+        </ul>
+
+        <h1 class="text-xl font-bold border-t-2 mt-3">
+            Solution
+        </h1>
+        <div>
+            <h1 id="welcome-message">Welcome to The BootCamp</h1>
+        </div>
+    </div>
+    <div class="hover:bg-stone-200 p-2 border-b-2 border-black">
+        <h1 class="text-xl font-black">question 10</h1>
+        <ul class="text-sm">
+            <li>1. Select the div> element using getElementById().</li>
+            <li> 2. Change its width to 200px and background color to "green".</li>
+            <li> 3. Print the modified element using console.log( ).</li>
+            <li></li>
+        </ul>
+
+        <h1 class="text-xl font-bold border-t-2 mt-3">
+            Solution
+        </h1>
+        <div>
+            <div id="dynamic-Box" class="w-[100px] h-[100px] bg-red-500"></div>
+        </div>
+    </div>
+    <script src="assignment2.js"></script>
+</body>
+
+</html>
