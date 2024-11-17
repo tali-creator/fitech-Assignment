@@ -188,14 +188,27 @@
 //     .catch(error => console.log(error))
 // })
 
-const btn = document.getElementById("click");
-const input = document.getElementById("input")
+//question 10
+async function makeApiRequest() {
+    const inputValue = document.getElementById('userInput').value;
 
-btn.addEventListener('click', () => {
-   if(!input){
-    console.log("enter a value")
-    return
-   }
+    if (!inputValue) {
+        alert('Please enter a value.');
+        return;
+    }
 
-   fetch(`https://api.example.com/data?query=${input.value}`)
-})
+    try {
+        const response = await fetch(`https://api.example.com/data?query=${inputValue}`);
+        
+        if (!response.ok) {
+            throw new Error(`API Error: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        document.getElementById('result').innerText = JSON.stringify(data, null, 2);
+    } catch (error) {
+        console.error('Error fetching API:', error);
+        document.getElementById('result').innerText = 'An error occurred. Please try again.';
+    }
+}
